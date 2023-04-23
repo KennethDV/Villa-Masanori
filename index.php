@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Day Bootstrap Template - Index</title>
+  <title>Dental Clique</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -97,7 +97,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Welcome to Villa Masanori</h1>
+      <h1>Welcome to Dental Clique</h1>
       <h2>We build houses </h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
@@ -512,7 +512,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="send.php" method="post" role="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -527,12 +527,14 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
+              
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              </div> -->
+              
+              <div class="text-center"><button type="submit" name="send">Send Message</button></div>
             </form>
           </div>
 
