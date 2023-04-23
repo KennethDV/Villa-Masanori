@@ -10,10 +10,12 @@ if(isset($_POST['send'])){
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
+
+    $mail->Host = 'smtp.gmail.com';
     $mail->Username = 'dentalclique2013@gmail.com';
     $mail->Password = 'dsjxaabrduxozatb';
+    
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
