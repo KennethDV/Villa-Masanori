@@ -508,7 +508,7 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d520.4172029613027!2d120.9008093041661!3d14.952181803344525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397aaaa2e891ad9%3A0x6ccf43194cdc4ea5!2sDental%20Clique!5e0!3m2!1sen!2sph!4v1682253027578!5m2!1sen!2sph" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">
