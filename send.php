@@ -3,38 +3,37 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
-require 'vendor/autoload.php';
 if(isset($_POST["send"])){
+    //POST
+    $sender = $_POST['email'];
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
+    //PHP Mailer Declaration
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
+    $mail->Username = 'buenaroa.connect@gmail.com';
+    $mail->Password = 'clkbqhdlrpcnjzsw'; //Email Password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = '465';
 
-    $mail->Host = 'smtp.hostinger.com';
-    $mail->Username = 'kenneth@villamasanori.fun';
-    $mail->Password = 'Kenneth@123';
-
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-
-    $mail->setFrom('kenneth@villamasanori.fun');
-
-    $mail->addAddress($_POST['email']);
-
+    //SETTING Email
+    $mail->setFrom('buenaroa.connect@gmail.com', 'Buenaroa'); //Senders Email
+    $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
-
-    
-    $mail->Subject = $_POST['subject'];
-    $mail->Body = "Thank you" . $_POST["name"] . "We have received your feedback. We'll get back to you soon.";
-
+    $mail->Subject = "Good Day!";
+    $mail->Body = "Thank you for contacting us! We will get back to you shortly. Have a wonderful day " . $name;
     $mail->send();
 
-    echo '<script>', 'alert("Sent Successfully");',
-    'window.location.replace("https://villamasanori.fun");',
-    
-    '</script>';
-
+    header('Location: index.php');
 }
+
 ?>
