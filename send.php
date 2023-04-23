@@ -20,13 +20,13 @@ if(isset($_POST["send"])){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'kenneth@villamasanori';
+    $mail->Username = 'kenneth@villamasanori.fun';
     $mail->Password = 'clkbqhdlrpcnjzsw'; //Email Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = '465';
 
     //SETTING Email
-    $mail->setFrom('buenaroa.connect@gmail.com', 'Buenaroa'); //Senders Email
+    $mail->setFrom('kenneth@villamasanori.fun', 'Dental Clique'); //Senders Email
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "Good Day!";
