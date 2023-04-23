@@ -14,8 +14,8 @@ if(isset($_POST['send'])){
     $mail->SMTPAuth = true;
     $mail->Username = 'dentalclique2013@gmail.com';
     $mail->Password = 'dsjxaabrduxozatb';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
     $mail->setFrom('dentalclique2013@gmail.com');
 
