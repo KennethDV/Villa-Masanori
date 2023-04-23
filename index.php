@@ -59,7 +59,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/dentallogo.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo"><img src="assets/img/nameandlogo.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
