@@ -2,7 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
+
 
 require 'vendor/autoload.php';
 if(isset($_POST['send'])){
@@ -12,14 +12,14 @@ if(isset($_POST['send'])){
     $mail->isSMTP();
     $mail->SMTPAuth = true;
 
-    $mail->Host = 'smtp.gmail.com';
-    $mail->Username = 'dentalclique2013@gmail.com';
-    $mail->Password = 'dsjxaabrduxozatb';
-    
+    $mail->Host = 'smtp.hostinger.com';
+    $mail->Username = 'kenneth@villamasanori.fun';
+    $mail->Password = 'Kenneth@123';
+
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('dentalclique2013@gmail.com');
+    $mail->setFrom('kenneth@villamasanori.fun');
 
     $mail->addAddress($_POST['email']);
 
@@ -27,9 +27,14 @@ if(isset($_POST['send'])){
 
     
     $mail->Subject = $_POST['subject'];
-    $mail->Body = $_POST['message'];
+    $mail->Body = "Thank you" . $_POST["name"] . "We have received your feedback. We'll get back to you soon.";
 
     $mail->send();
+
+    echo '<script>', 'alert("Sent Successfully");',
+    'window.location.replace("https://villamasanori.fun");',
+    
+    '</script>';
 
 }
 ?>
