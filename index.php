@@ -528,7 +528,7 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               
-              <div class="text-center"><button type="submit" name="send">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="send">Message Us</button></div>
             </form>
           </div>
 
