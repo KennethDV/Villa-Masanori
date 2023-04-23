@@ -29,10 +29,5 @@ if(isset($_POST['send'])){
 
     $mail->send();
 
-    echo
-    "<script>
-    alert('Sent Successfully');
-    document.location.href = 'index.php'; 
-    </script>";
 }
 ?>
