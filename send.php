@@ -18,10 +18,10 @@ if(isset($_POST["send"])){
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'kenneth@villamasanori.fun';
-    $mail->Password = 'clkbqhdlrpcnjzsw'; //Email Password
+    $mail->Password = 'Kenneth@123'; //Email Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = '465';
 
