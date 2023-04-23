@@ -530,7 +530,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="send" rows="5" placeholder="Message" required></textarea>
               </div>
               
               <!-- <div class="my-3">
